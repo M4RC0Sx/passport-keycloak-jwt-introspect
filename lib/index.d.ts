@@ -2,11 +2,18 @@ import { Strategy as PassportStrategy } from "passport-strategy";
 import express = require("express");
 
 declare namespace KeycloakJwtIntrospectStrategy {
-  interface Options {
+  interface IOptions {
     introspectUrl: string | undefined;
     clientId: string | undefined;
     clientSecret: string | undefined;
-    passReqToCallback?: boolean | undefined;
+    passReqToCallback?: false | undefined;
+  }
+
+  interface IOptionsWithRequest {
+    introspectUrl: string | undefined;
+    clientId: string | undefined;
+    clientSecret: string | undefined;
+    passReqToCallback?: true;
   }
 
   interface VerifyCallback {
@@ -25,8 +32,11 @@ declare namespace KeycloakJwtIntrospectStrategy {
   }
 
   class Strategy extends PassportStrategy {
-    constructor(options: Options, verify: VerifyCallback);
-    constructor(options: Options, verify: VerifyCallbackWithRequest);
+    constructor(options: IOptions, verify: VerifyCallback);
+    constructor(
+      options: IOptionsWithRequest,
+      verify: VerifyCallbackWithRequest
+    );
     authenticate(req: express.Request, options?: Options | undefined): void;
   }
 }
