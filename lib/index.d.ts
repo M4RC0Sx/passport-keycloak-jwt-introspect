@@ -18,7 +18,7 @@ declare namespace KeycloakJwtIntrospectStrategy {
 
   interface VerifyCallback {
     (
-      keycloakPayload: any,
+      keycloakData: any,
       done: (error: any, user?: Express.User | false, options?: any) => void
     ): void;
   }
@@ -26,7 +26,7 @@ declare namespace KeycloakJwtIntrospectStrategy {
   interface VerifyCallbackWithRequest {
     (
       req: express.Request,
-      keycloakPayload: any,
+      keycloakData: any,
       done: (error: any, user?: Express.User | false, options?: any) => void
     ): void;
   }
