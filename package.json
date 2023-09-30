@@ -1,0 +1,43 @@
+{
+  "name": "passport-keycloak-jwt-introspect",
+  "version": "1.0.0",
+  "description": "HTTP Bearer authentication using Keycloak token introspect for PassportJS ",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "asd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M4RC0Sx/passport-keycloak-jwt-introspect.git"
+  },
+  "keywords": [
+    "passport-keycloak-jwt-introspect",
+    "passport",
+    "keycloak",
+    "auth",
+    "authentication",
+    "token",
+    "jwt",
+    "bearer",
+    "instrospect",
+    "passport-strategy",
+    "oauth",
+    "oauth2",
+    "openid"
+  ],
+  "author": {
+    "name": "M4RC0Sx",
+    "url": "https://github.com/M4RC0Sx"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/M4RC0Sx/passport-keycloak-jwt-introspect/issues"
+  },
+  "homepage": "https://github.com/M4RC0Sx/passport-keycloak-jwt-introspect",
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0"
+  }
+}
