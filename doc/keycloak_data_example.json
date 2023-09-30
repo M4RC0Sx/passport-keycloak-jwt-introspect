@@ -1,0 +1,57 @@
+{
+    "exp": 1696094863,
+    "iat": 1696094563,
+    "auth_time": 1696090817,
+    "jti": "5e11db3d-6ff2-496d-1234-fab4e4a3c8b2",
+    "iss": "http://localhost:8080/realms/test",
+    "aud": [
+        "test-backend",
+        "broker",
+        "account"
+    ],
+    "sub": "f7458d9a-56a7-1234-866b-72423c3555c3",
+    "typ": "Bearer",
+    "azp": "test-frontend",
+    "session_state": "37946137-36ed-1234-9d9c-4edebba57d90",
+    "name": "eeeeeeeeee e",
+    "given_name": "eeeeeeeeee",
+    "family_name": "e",
+    "preferred_username": "asd",
+    "email": "asd@gmail.com",
+    "email_verified": false,
+    "acr": "0",
+    "allowed-origins": [
+        "/*"
+    ],
+    "realm_access": {
+        "roles": [
+            "default-roles-test",
+            "offline_access",
+            "uma_authorization"
+        ]
+    },
+    "resource_access": {
+        "test-backend": {
+            "roles": [
+                "test-user"
+            ]
+        },
+        "broker": {
+            "roles": [
+                "read-token"
+            ]
+        },
+        "account": {
+            "roles": [
+                "manage-account",
+                "manage-account-links",
+                "view-profile"
+            ]
+        }
+    },
+    "scope": "openid profile email read_token",
+    "sid": "37946137-36ed-1234-9d9c-4edebba57d90",
+    "client_id": "test-frontend",
+    "username": "asd",
+    "active": true
+}
