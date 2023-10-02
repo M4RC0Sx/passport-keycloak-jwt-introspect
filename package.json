@@ -1,6 +1,6 @@
 {
   "name": "passport-keycloak-jwt-introspect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "HTTP Bearer authentication using Keycloak token introspect for PassportJS ",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

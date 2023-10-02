@@ -1,5 +1,7 @@
 # passport-keycloak-jwt-introspect  - Changelog
 
+## [1.0.1](https://github.com/M4RC0Sx/passport-keycloak-jwt-introspect/compare/v1.0.0...v1.0.1) (2023-10-02)
+
 ## 1.0.0 (2023-10-02)
 
 
