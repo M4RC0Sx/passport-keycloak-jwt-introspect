@@ -14,6 +14,9 @@ npm install passport-keycloak-jwt-introspect
 
 #### Configuration
 ```javascript
+import keycloak from "passport-keycloak-jwt-introspect";
+const KeycloakJwtIntrospectStrategy = keycloak.Strategy;
+
 passport.use(
     new KeycloakJwtIntrospectStrategy(
       {
@@ -58,6 +61,15 @@ app.use(checkAuth);
 
 ## Examples
 Example usage cases and configuration are coming soon. Any help is appreciated, so feel free to contribute!
+
+## TODO
+- [ ] Improve documentation
+- [ ] Add more unit tests, specially to check different responses from keycloak
+- [ ] Create usage examples
+- [ ] Add repository badges
+
+## Issues and contributing
+As I said, any help is appreciated. You can report any issue on the [Issues page](https://github.com/M4RC0Sx/passport-keycloak-jwt-introspect/issues) as well as making a pull request to improve any aspect of the project.
 
 ## License
 [The MIT License](http://opensource.org/licenses/MIT)
