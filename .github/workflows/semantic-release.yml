@@ -8,6 +8,7 @@ jobs:
     name: Release
     permissions:
       id-token: write # to enable NPM provenance
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
